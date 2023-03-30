@@ -56,6 +56,11 @@ class LoginController extends GetxController {
       idToken: googleAuth?.idToken,
     );
 
+    if (googleUser != null) {
+      Get.offNamed(Routes.MESSAGE);
+      print("User ===> $googleUser");
+    }
+
     // Once signed in, return the UserCredential
     return await FirebaseAuth.instance.signInWithCredential(credential);
   }

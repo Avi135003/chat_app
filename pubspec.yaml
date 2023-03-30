@@ -16,6 +16,8 @@ dependencies:
   get: 4.6.5
   flutter: 
     sdk: flutter
+  flutter_local_notifications: ^13.0.0
+  firebase_storage: ^11.0.16
 
 dev_dependencies: 
   flutter_lints: ^2.0.0
@@ -24,11 +26,11 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-assets:
-      - assets/images/
+  assets:
+    - assets/images/
 
-fonts:
-      - family: Roxborough CF
-        fonts:
-          - asset: assets/fonts/roxborough-cf-thin.ttf
+  fonts:
+    - family: Roxborough CF
+      fonts:
+        - asset: assets/fonts/roxborough-cf-thin.ttf
 

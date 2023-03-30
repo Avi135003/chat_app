@@ -9,10 +9,7 @@ class SplashView extends GetView<SplashController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('SplashView'),
-        centerTitle: true,
-      ),
+      backgroundColor: Color(0xff4E1564),
       body:  Center(
         child: Image.asset(
             controller.applogo
